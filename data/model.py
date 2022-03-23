@@ -51,7 +51,7 @@ class BankAccount(Base):
         self.status = bank_account_info['status']
 
 
-# By Execute this fill, will create tables in the DB
+# by executing this file will create tables in the DB
 # if __name__ == '__main__':
 #     Base.metadata.create_all(engine)
 
