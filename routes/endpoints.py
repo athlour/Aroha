@@ -39,6 +39,7 @@ async def bank(request: Request, **bank_id):
             result = True
     except Exception as e:
         # TODO Analyse the error type and log it
+        # TODO Analyse the error type and log it
         response_code, msg = 500, e
     finally:
         if result is True:
