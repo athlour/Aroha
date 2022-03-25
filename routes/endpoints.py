@@ -32,7 +32,7 @@ async def bank(request: Request, **bank_id):
             response_code, msg = 200, 'Success'
             result = True
         if request.method == "GET":
-            # TODO Use the customer_id parameter/key and process the query request
+            # TODO Use the bank_id parameter/key and process the query request
             response_code, msg = 200, 'Success'
             result = True
     except Exception as e:
@@ -52,7 +52,7 @@ async def source(request: Request, source_id: str):
             response_code, msg = 200, 'Success'
             result = True
         if request.method == "GET":
-            # TODO Use the customer_id parameter/key and process the query request
+            # TODO Use the source_id parameter/key and process the query request
             response_code, msg = 200, 'Success'
             result = True
     except Exception as e:
