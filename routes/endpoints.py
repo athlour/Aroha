@@ -45,7 +45,7 @@ async def bank(request: Request, **bank_id):
 
 
 @app.api_route("/source", methods=["GET", "POST"])
-async def source(request: Request, source_id: str):
+async def source(request: Request, **source_id: str):
     try:
         if request.method == "POST":
             # TODO Process the POST Request
