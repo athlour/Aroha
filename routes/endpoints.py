@@ -27,6 +27,7 @@ async def customer(request: Request, **customer_id):
 
 @app.api_route("/bank/", methods=["GET", "POST"])
 async def bank(request: Request, **bank_id):
+    response_code, msg, result = None, None, False
     try:
         if request.method == "POST":
             # TODO Process the POST Request
@@ -48,6 +49,7 @@ async def bank(request: Request, **bank_id):
 
 @app.api_route("/source", methods=["GET", "POST"])
 async def source(request: Request, **source_id):
+    response_code, msg, result = None, None, False
     try:
         if request.method == "POST":
             # TODO Process the POST Request
