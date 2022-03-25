@@ -34,4 +34,3 @@ async def source(request: Request, source_id: str):
         return {'Response Code': 200, 'Request Type': request.method, 'id': source_id}
     else:
         return {'Response Code': 501, 'Request Type': request.method}
-
